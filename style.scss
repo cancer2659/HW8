@@ -1,0 +1,66 @@
+@import "fontawesome-free-5.0.8/web-fonts-with-css/css/fontawesome-all.css";
+
+
+body{
+  background-color: aliceblue;
+  position: relative;
+}
+button{
+  padding: 15px;
+  background-color: palegreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+  &:last-of-type{
+    background-color: orangered;
+  }
+}
+table{
+  max-width: 500px;
+  border: 1px solid black;
+  margin: auto;
+}
+td, th{
+  padding: 5px 15px;
+  text-align: start;
+  width: 50%;
+}
+
+form{
+  max-width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px auto 20px;
+}
+select, input {
+  width: 48%;
+  padding: 10px;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+}
+#cart{
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  i{
+    font-size: 50px;
+  }
+}
+#cartQuant{
+  position: absolute;
+  top:-10px;
+  right: -10px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: #ff253a;
+  border: 1px white solid;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

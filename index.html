@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <select id="product">
+            <option>Пиво</option>
+            <option>Вино</option>
+            <option>Водка</option>
+            <option>Мартини</option>
+        </select>
+        <input type="number" id="kolvo">
+        <button type="button" onclick=" butAddProd()">Добавить товар корзину</button>
+        <button type="button" onclick=" butDelProd()">Удалить товар с корзины</button>
+    </form>
+    <div>
+        <table id="tableBl">
+            <thead>
+                <th>Наименование товара</th>
+                <th>Количество товара, л</th>
+                <th>Сумма, грн</th>
+            </thead>
+            <tbody id="resultTable"></tbody>
+        </table>
+    </div>
+
+
+
+<div id="cart">
+    <i class="fas fa-shopping-cart"></i>
+    <span id="cartQuant"></span>
+</div>
+</body>
+</html>
